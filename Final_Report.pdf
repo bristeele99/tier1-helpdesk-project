@@ -1,0 +1,77 @@
+# 🧾 Final Report – Simulated Tier 1 Help Desk Lab (Azure-Based)
+
+## 📌 Overview
+
+This project simulates a Tier 1 IT support environment using Microsoft Azure and Windows Server technologies. The lab includes user account management, Active Directory configuration, help desk ticket handling, and basic network troubleshooting.
+
+---
+
+## ☁️ Infrastructure Summary
+
+- **Cloud Platform:** Microsoft Azure
+- **VMs Used:**
+  - Windows Server 2022 (Domain Controller)
+  - Optional: Windows 10/11 client (Dev/Test)
+
+- **Services Implemented:**
+  - Active Directory Domain Services (AD DS)
+  - DNS
+  - Group Policy Management
+  - Remote Desktop (RDP)
+
+---
+
+## 🛠️ Tasks Completed
+
+- Created resource group, VNet, and VM in Azure
+- Promoted server to domain controller (`helpdesk.local`)
+- Created OUs, users, and security groups
+- Simulated common help desk tickets
+- Wrote documentation and how-to guides
+- Tracked all issues with screenshots and resolution steps
+
+---
+
+## 🧾 Tickets Simulated
+
+| Ticket # | Issue |
+|----------|------------------------------|
+| 001 | User cannot log in |
+| 002 | Password reset request |
+| 003 | Network not connecting |
+| 004 | Printer not responding |
+| 005 | Screen doesn’t auto-lock |
+
+(See `/Tickets` folder for full details.)
+
+---
+
+## 📚 Documentation Highlights
+
+- Reset Password in AD
+- Create Users in AD
+- Apply and verify GPOs
+- Network troubleshooting steps
+
+---
+
+## 🧠 Skills Demonstrated
+
+- Cloud-based VM setup (Azure)
+- User and group administration
+- Group Policy configuration
+- Network diagnostic tools
+- Technical documentation and ticketing
+
+---
+
+## 📷 Screenshots & Logs
+
+All screenshots saved in `/Screenshots/`  
+Logs and ticket responses are in `/Tickets/`
+
+---
+
+## 🎯 Conclusion
+
+This lab demonstrates my ability to independently set up and manage core Tier 1 Help Desk responsibilities in a simulated enterprise environment. It reflects technical ability, attention to detail, and a professional workflow — skills I’m eager to apply in a real IT support role.
