@@ -10,16 +10,16 @@ This checklist tracks the full lifecycle of your IT support lab environment in A
 - [X] Create a Resource Group (`HelpDesk-Lab`)
 - [X] Create a Virtual Network (`IT-Lab-VNet`)
 - [X] Deploy a Windows Server 2022 VM (`DC-Server`)
-- [ ] Configure Public Inbound Ports for RDP
-- [ ] Connect to the VM via Remote Desktop (RDP)
+- [X] Configure Public Inbound Ports for RDP
+- [X] Connect to the VM via Remote Desktop (RDP)
 
 ---
 
 ## 🧩 PHASE 2: Active Directory Domain Setup
 
-- [ ] Install Active Directory Domain Services (AD DS) and DNS
-- [ ] Promote the Server to a Domain Controller
-- [ ] Set internal domain name (e.g., `helpdesk.local`)
+- [X] Install Active Directory Domain Services (AD DS) and DNS
+- [X] Promote the Server to a Domain Controller
+- [X] Set internal domain name (e.g., `helpdesk.local`)
 - [ ] Create Organizational Units (OUs)
 - [ ] Create 5+ test user accounts
 - [ ] Create 2+ security groups (e.g., IT, HR, Managers)
