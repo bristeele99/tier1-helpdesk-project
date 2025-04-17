@@ -37,11 +37,14 @@ After deploying the Windows Server 2022 VM, you can access it using Remote Deskt
 3. Download the `.rdp` file provided by Azure
 4. Open the `.rdp` file on your local machine
 5. When prompted, enter:
-   - **Username:** `azureadmin` (or the one you set)
-   - **Password:** Your secure VM password
+   - **Username:** `azureadmin`
+   - **Password:** 
 6. Click **"Yes"** to accept the certificate warning
 
 ---
+### 🔧 Troubleshooting RDP connection
+
+Sometimes restarting your VM or re-connecting can help fix minor problems going on under the hood. I went through the **Steps to Connect via RDP** and I was able to login. 
 
 ### 🧠 Notes
 
