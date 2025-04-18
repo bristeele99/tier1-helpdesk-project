@@ -25,9 +25,36 @@ This project simulates a professional Tier 1 IT Support environment built in **M
 
 ---
 
-## 🧱 Folder Structure
+# 📁 Project Structure: HelpDesk_Lab_Azure
 
-. ├── Documentation │ ├── ADDS_Installation_and_DC_Promotion.md │ ├── Domain_Join_and_DNS_Config.md │ └── ... ├── Scripts │ ├── create_users.ps1 │ └── gpupdate_all.ps1 ├── Screenshots │ └── [All your PNG screenshots here] ├── Tickets │ └── ticket_001_login_issue.md → ticket_005_auto-lock_issue.md ├── Checklist.md ├── Final_Report.pdf └── README.md
+```
+HelpDesk_Lab_Azure/
+├── Checklist.md
+├── Final_Report.pdf
+├── README.md
+├── Documentation/
+│   ├── ADDS_Installation_and_DC_Promotion.md
+│   ├── Apply_GPO.md
+│   ├── Create_User_AD.md
+│   ├── Domain_Join_and_DNS_Config.md
+│   ├── Network_Configuration.md
+│   ├── Network_Troubleshooting.md
+│   ├── Reset_Password.md
+│   ├── VM_Deployment_Client.md
+│   └── VM_Deployment_DC_Server.md
+├── Screenshots/
+│   └── [GPO, AD, RDP, DNS, VM screenshots]
+├── Scripts/
+│   ├── create_users.ps1
+│   └── gpupdate_all.ps1
+├── Tickets/
+│   ├── ticket_001_login_issue.md
+│   ├── ticket_002_password_reset.md
+│   ├── ticket_003_vpn_issue.md
+│   ├── ticket_004_printer_issue.md
+│   └── ticket_005_auto-lock_issue.md
+└── .git/
+    └── ...
 
 ---
 
