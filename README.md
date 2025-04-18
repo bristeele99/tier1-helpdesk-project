@@ -55,7 +55,7 @@ HelpDesk_Lab_Azure/
 │   └── ticket_005_auto-lock_issue.md
 └── .git/
     └── ...
-
+```
 ---
 
 ## 📚 Key Features
