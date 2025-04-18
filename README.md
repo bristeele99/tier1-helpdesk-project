@@ -27,7 +27,7 @@ This project simulates a professional Tier 1 IT Support environment built in **M
 
 ## 🧱 Folder Structure
 
-HelpDesk_Lab_Azure/ ├── Checklist.md ├── Final_Report.md ├── README.md ├── Documentation/ │ ├── Create_User_AD.md │ ├── Reset_Password.md │ ├── Network_Troubleshooting.md │ └── Apply_GPO.md ├── Tickets/ │ ├── ticket_001_login_issue.md │ ├── ticket_002_password_reset.md │ └── ... ├── Screenshots/ │ ├── ad_user_creation.png │ ├── gpo_lockscreen_settings.png │ └── ... └── Scripts/ (optional) ├── create_users.ps1 └── gpupdate_all.ps1
+. ├── Documentation │ ├── ADDS_Installation_and_DC_Promotion.md │ ├── Domain_Join_and_DNS_Config.md │ └── ... ├── Scripts │ ├── create_users.ps1 │ └── gpupdate_all.ps1 ├── Screenshots │ └── [All your PNG screenshots here] ├── Tickets │ └── ticket_001_login_issue.md → ticket_005_auto-lock_issue.md ├── Checklist.md ├── Final_Report.pdf └── README.md
 
 ---
 
