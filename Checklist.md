@@ -6,24 +6,28 @@ This checklist tracks the full lifecycle of your IT support lab environment in A
 
 ## 📁 PHASE 1: Azure Setup
 
-- [X] Create an Azure Free Account (pay as you go)
-- [X] Create a Resource Group (`HelpDesk-Lab`)
-- [X] Create a Virtual Network (`IT-Lab-VNet`)
-- [X] Deploy a Windows Server 2022 VM (`DC-Server`)
-- [X] Configure Public Inbound Ports for RDP
-- [X] Connect to the VM via Remote Desktop (RDP)
+- [x] Create an Azure Free Account (pay as you go)
+- [x] Create a Resource Group (`HelpDesk-Lab`)
+- [x] Create a Virtual Network (`IT-Lab-VNet`)
+- [x] Deploy a Windows Server 2022 VM (`DC-Server`)
+- [x] Configure Public Inbound Ports for RDP
+- [x] Connect to the VM via Remote Desktop (RDP)
+- [ ] Deploy a Windows 10/11 Client VM (`win10-client`)
+- [ ] Set client DNS to use DC-Server private IP
+- [ ] Join client to the `helpdesk.local` domain
+- [ ] Add domain users (e.g., ssmith, mlee) to Remote Desktop Users group (real-world roles only)
 
 ---
 
 ## 🧩 PHASE 2: Active Directory Domain Setup
 
-- [X] Install Active Directory Domain Services (AD DS) and DNS
-- [X] Promote the Server to a Domain Controller
-- [X] Set internal domain name (e.g., `helpdesk.local`)
-- [ ] Create Organizational Units (OUs)
-- [ ] Create 5+ test user accounts
-- [ ] Create 2+ security groups (e.g., IT, HR, Managers)
-- [ ] Assign users to appropriate groups
+- [x] Install Active Directory Domain Services (AD DS) and DNS
+- [x] Promote the Server to a Domain Controller
+- [x] Set internal domain name (e.g., `helpdesk.local`)
+- [x] Create Organizational Units (OUs)
+- [x] Create 4+ test user accounts
+- [x] Create 2+ security groups (e.g., IT, HR, Managers)
+- [x] Assign users to appropriate groups
 
 ---
 
@@ -34,7 +38,7 @@ This checklist tracks the full lifecycle of your IT support lab environment in A
 - [ ] Add/remove a user from a group
 - [ ] Use `ipconfig`, `ping`, and `nslookup` from the command line
 - [ ] Set a static IP address on the server
-- [ ] Create and apply a Group Policy Object (e.g., lock screen after 5 minutes)
+- [x] Create and apply a Group Policy Object (e.g., lock screen after 5 minutes)
 - [ ] Log 5+ simulated help desk tickets
 - [ ] Take screenshots of each step/fix
 
@@ -44,4 +48,7 @@ This checklist tracks the full lifecycle of your IT support lab environment in A
 
 - [ ] Create a `/Documentation` folder for SOPs and guides
 - [ ] Write “How to create a user in AD” guide
-- [ ] Write “How to reset
+- [ ] Write “How to reset a user password” SOP
+- [ ] Write “How to join a machine to the domain” guide
+- [ ] Write “How to apply and verify a GPO” SOP
+- [ ] Write Final Summary Report of Project Build

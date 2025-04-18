@@ -131,5 +131,3 @@ DWM (Desktop Window Manager) crashed due to:
 **📷 Screenshots (Process Summary):**
 - `add_roles_ad_ds.png`
 - `promote_server_to_dc.png`
-- `domain_name_helpdesk_local.png`
-- `dc_promotion_success.png`

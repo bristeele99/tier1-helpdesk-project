@@ -13,7 +13,7 @@ This guide walks through applying a basic GPO in Active Directory, such as enfor
 1. Open **Group Policy Management Console (GPMC)**
 2. Expand your domain (e.g., helpdesk.local)
 3. Right-click **Group Policy Objects** → **New**
-   - Name: `GPO_LockScreen`
+   - Name: `HR - Auto Lock Policy`
 4. Right-click the new GPO → **Edit**
 5. Navigate to:
 User Configuration > Administrative Templates > Control Panel > Personalization
@@ -34,5 +34,7 @@ User Configuration > Administrative Templates > Control Panel > Personalization
 
 ## 📷 Screenshot(s)
 
-- `screenshots/gpo_lockscreen_settings.png`
 - `screenshots/gpo_linked_to_ou.png`
+- `screenshots/open_gpm.png`
+- `screenshots/create_gpo_autolock.png`
+- `screenshots/gpo__settings_autolock.png`
