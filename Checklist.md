@@ -36,11 +36,11 @@ This checklist tracks the full lifecycle of your IT support lab environment in A
 - [ ] Reset a user password
 - [ ] Disable and re-enable a user account
 - [ ] Add/remove a user from a group
-- [ ] Use `ipconfig`, `ping`, and `nslookup` from the command line
-- [ ] Set a static IP address on the server
+- [x] Use `ipconfig`, `ping`, and `nslookup` from the command line
+- [x] Set a static IP address on the server
 - [x] Create and apply a Group Policy Object (e.g., lock screen after 5 minutes)
 - [ ] Log 5+ simulated help desk tickets
-- [ ] Take screenshots of each step/fix
+- [x] Take screenshots of each step/fix
 
 ---
 
@@ -49,6 +49,6 @@ This checklist tracks the full lifecycle of your IT support lab environment in A
 - [ ] Create a `/Documentation` folder for SOPs and guides
 - [ ] Write “How to create a user in AD” guide
 - [ ] Write “How to reset a user password” SOP
-- [ ] Write “How to join a machine to the domain” guide
-- [ ] Write “How to apply and verify a GPO” SOP
+- [x] Write “How to join a machine to the domain” guide
+- [x] Write “How to apply and verify a GPO” SOP
 - [ ] Write Final Summary Report of Project Build
