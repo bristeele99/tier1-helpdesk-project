@@ -169,3 +169,69 @@ jdoe,WIN10CLIENT,192.168.0.25,04/21/2025,10:58:41.45
 | Script doesn’t run           | Verify GPO is linked to the correct OU containing the **user**        |
 | GPO not applying             | Run `gpresult /r` or `gpupdate /force` on the client machine           |
 | Script path not resolving    | Confirm the script is in the correct SYSVOL `scripts` folder           |
+
+
+Ran into 
+"Network access is denied"
+Or
+"The system cannot access the file path"
+
+This will often flash very quickly during login, or get logged if verbose GPO logging is enabled.
+For C:\Windows\SYSVOL\sysvol\helpdesk.local\scripts\
+
+## 🛠️ Troubleshooting: "Network Access is Denied" When Logon Script Runs
+
+If you see a **"Network access is denied"** error during logon — especially pointing to the script path or the `LoginLogs` share — it's likely a **permissions issue**.
+
+---
+
+### 🧭 What's Likely Happening?
+
+Your logon script tries to write to:
+If the domain user doesn’t have permission to **access or write** to that folder, the script will fail and trigger a "network access" error.
+
+---
+
+### ✅ Step-by-Step Fix
+
+#### 🔒 1. Check Share Permissions on `LoginLogs`
+
+1. On your Domain Controller (`DC-Server`), right-click the folder `C:\LoginLogs` > **Properties**
+2. Go to the **Sharing** tab > click **Advanced Sharing**
+3. Check ✅ **"Share this folder"** is enabled
+4. Click **Permissions**
+5. Ensure `Authenticated Users` or `Domain Users` are listed
+6. ✅ Grant them **Change** and **Read** permissions
+
+> ❗ "Read" only won't allow log file creation — "Change" is required.
+
+---
+
+#### 🛡️ 2. Check NTFS (Security) Permissions on the Folder
+
+1. Still in the `C:\LoginLogs` folder's **Properties** window, go to the **Security** tab
+2. Click **Edit**
+3. Add `Authenticated Users` or `Domain Users` if missing -(This fixed the problem)
+4. ✅ Grant **Modify**, **Read & Execute**, and **Write** permissions
+
+---
+
+#### 🧪 3. Test User Access from the Client
+
+1. Log in to your domain-joined client (e.g., `WIN10CLIENT`) as a domain user (e.g., `jdoe`)
+2. Press `Windows + R` → Type:
+
+3. ✅ Confirm that:
+   - The folder opens successfully
+   - You can create a test file (e.g., `test.txt`) inside
+
+---
+
+#### 🧼 4. Optional Debug: Test Local Script Execution
+
+Temporarily edit your `logonscript.bat` to include:
+
+```batch echo %username% > C:\Temp\testlog.txt ```
+
+## Screenshots 
+- `Screenshots/GPO_logon_script_troubleshoot.png`
