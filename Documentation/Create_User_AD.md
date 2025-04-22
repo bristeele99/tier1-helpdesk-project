@@ -60,11 +60,21 @@ This guide explains how to manually create **Organizational Units (OUs)**, **use
 
 ## 👤 Sample Users
 
-| Username | Name         | OU       | Group(s)       |
-|----------|--------------|----------|----------------|
-| jdoe     | John Doe     | HR       | HR_ReadOnly    |
-| ssmith   | Sarah Smith  | IT       | IT_Admins      |
-| mlee     | Mike Lee     | Support  | Support_Level1 |
+| Username   | Full Name         | OU           | Group(s)         | Notes                                  |
+|------------|------------------|--------------|------------------|----------------------------------------|
+| jdoe       | John Doe          | HR           | HR_ReadOnly      | General HR user                        |
+| rjones     | Rebecca Jones     | HR           | HR_ReadOnly      | Payroll specialist                     |
+| khicks     | Kevin Hicks       | HR           | HR_ReadOnly      | Recruiter                              |
+| ssmith     | Sarah Smith       | IT           | IT_Admins        | IT lead                                |
+| dnguyen    | Diana Nguyen      | IT           | IT_Admins        | Systems administrator                  |
+| eperez     | Elena Perez       | IT           | IT_Admins        | Security analyst                       |
+| mlee       | Mike Lee          | Support      | Support_Level1   | Tier 1 help desk tech                  |
+| cmorris    | Chris Morris      | Support      | Support_Level1   | Tier 1 help desk tech                  |
+| ljames     | Lisa James        | Support      | Support_Level1   | Tier 2 support                         |
+| bwalker    | Brandon Walker    | Support      | Support_Level1   | Night shift support                    |
+| wkstn-01   | Workstation 01    | Workstations | None             | Machine-specific or dummy login        |
+| wkstn-02   | Workstation 02    | Workstations | None             | Test workstation user                  |
+| autolog1   | AutoLogin Agent   | Workstations | None             | Autologin for demo or shared terminal  |
 
 ---
 

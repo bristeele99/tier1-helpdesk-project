@@ -74,6 +74,9 @@ net localgroup "Remote Desktop Users" "helpdesk\ssmith" /add
 net localgroup "Remote Desktop Users" "helpdesk\mlee" /add
 ```
 ---
+## 🔍 RDP Access Verification
+
+Connect via RDP to the win-10 client machine and use login credentials for user "helpdesk\ssmith" and password "P@ssw0rd!1234" or whatever was set when account was created in AD.
 
 ## 🔍 Verification
 
