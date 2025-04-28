@@ -12,10 +12,10 @@ This checklist tracks the full lifecycle of your IT support lab environment in A
 - [x] Deploy a Windows Server 2022 VM (`DC-Server`)
 - [x] Configure Public Inbound Ports for RDP
 - [x] Connect to the VM via Remote Desktop (RDP)
-- [ ] Deploy a Windows 10/11 Client VM (`win10-client`)
-- [ ] Set client DNS to use DC-Server private IP
-- [ ] Join client to the `helpdesk.local` domain
-- [ ] Add domain users (e.g., ssmith, mlee) to Remote Desktop Users group (real-world roles only)
+- [x] Deploy a Windows 10/11 Client VM (`win10-client`)
+- [x] Set client DNS to use DC-Server private IP
+- [x] Join client to the `helpdesk.local` domain
+- [x] Add domain users (e.g., ssmith, mlee) to Remote Desktop Users group (real-world roles only)
 
 ---
 
@@ -33,7 +33,7 @@ This checklist tracks the full lifecycle of your IT support lab environment in A
 
 ## 💼 PHASE 3: Simulate Tier 1 Help Desk Tasks
 
-- [ ] Reset a user password
+- [x] Reset a user password
 - [ ] Disable and re-enable a user account
 - [ ] Add/remove a user from a group
 - [x] Use `ipconfig`, `ping`, and `nslookup` from the command line
