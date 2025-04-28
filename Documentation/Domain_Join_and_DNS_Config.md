@@ -10,7 +10,7 @@ This guide explains how to point your client VM to the domain controller for DNS
 2. Click on the NIC name
 3. Go to **DNS servers** under the Settings drop down on the left
 4. Choose **Custom**
-5. Set the DNS IP to the **private IP of `dc-server`** (e.g., `10.0.1.4`)
+5. Set the DNS IP to the **private IP of `dc-server`** (e.g., `10.0.1.5`)
 6. Click **Save**
 7. Restart the `win10-client` VM from the Azure Portal
 
