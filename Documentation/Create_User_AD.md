@@ -102,3 +102,78 @@ This guide explains how to manually create **Organizational Units (OUs)**, **use
 - `screenshots/ad_user_and_computer_creation.png`
 - `screenshots/ad_user_creation.png`
 - `screenshots/security_groups_creation.png`
+
+
+# 🖥️ How to Fix "User Doesn't Have Remote Sign-In Access" in Azure Win10Client
+
+When you reset a password for a domain user and try to **sign in remotely** but get a permission error, you need to **add the user to the Remote Desktop Users group**.
+
+## ✅ Quick Fix Steps
+
+---
+
+## Method 1: (Best Practice) via DC (using Group Membership)
+
+1. On your **DC-Server** (Domain Controller):
+   - Open **Active Directory Users and Computers**:
+
+     ```bash
+     dsa.msc
+     ```
+
+   - Find your user (e.g., `jdoe`).
+   - Right-click the user → **Properties** → **Member Of** tab.
+   - Click **Add...** ➔ Type:
+
+     ```text
+     Remote Desktop Users
+     ```
+
+   - Click **OK**.
+
+> ✅ This method adds the user to the "Remote Desktop Users" group domain-wide.
+
+---
+
+## Method 2: (Quick fix on just the Client)
+
+1. On the **Win10Client** machine:
+   - Sign in as a **local administrator** (or domain admin).
+   - Open **Computer Management**:
+
+     ```bash
+     compmgmt.msc
+     ```
+
+   - Go to **Local Users and Groups** → **Groups** → **Remote Desktop Users**.
+   - Right-click **Remote Desktop Users** ➔ **Add to Group** ➔ **Add**.
+   - Type the username in the format:
+
+     ```bash
+     domain\username
+     ```
+
+   - Click **Check Names** ➔ **OK**.
+
+> ✅ This only allows the user to RDP into that specific client machine.
+
+---
+
+## 🔥 Quick Summary
+
+| Goal | Action |
+|:----|:------|
+| Allow user RDP access across domain computers | Add to **Remote Desktop Users** group in Active Directory |
+| Allow user RDP access to only one machine | Add to **Remote Desktop Users** group locally on that machine |
+
+---
+
+## 🚀 Bonus: PowerShell Automation
+
+To **add a user** to the Remote Desktop Users group via PowerShell:
+
+```powershell
+Add-LocalGroupMember -Group "Remote Desktop Users" -Member "DOMAIN\username"
+```
+
+✅ Run this as an administrator on the Win10Client.

@@ -1,4 +1,4 @@
-## ✅ 1. Apply a Test GPO to the Workstations OU
+# ✅ 1. Apply a Test GPO to the Workstations OU
 
 Let’s apply a simple GPO that will visibly confirm it's working — for example, we’ll display a legal banner on logon.
 
@@ -30,10 +30,11 @@ on your WIN10 client (or reboot it) to test.
 
 ## 📸 Screenshots
 
-- `screenshots/GPO_interactive_logon_policy.png`
+- `screenshots/GPO_interactive_logon_policy1.png`
+- `screenshots/GPO_interactive_logon_policy2.png`
 
 
-📜 2. Add a Script to Log Which Computer a User Logs In From
+# 📜 2. Add a Script to Log Which Computer a User Logs In From
 We’ll use a Logon Script via GPO to write the username and computer name to a central text file on your Domain Controller (or shared folder).
 
 📁 Prep Shared Log Folder:
@@ -158,6 +159,9 @@ Ensure the following are completed before testing:
 
 jdoe,WIN10CLIENT,192.168.0.25,04/21/2025,10:58:41.45
 
+## 📸 Screenshots
+
+- `screenshots/GPO_LogonLogging_Confirmation.png`
 
 ---
 
