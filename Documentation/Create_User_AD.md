@@ -102,6 +102,10 @@ This guide explains how to manually create **Organizational Units (OUs)**, **use
 - `screenshots/ad_user_and_computer_creation.png`
 - `screenshots/ad_user_creation.png`
 - `screenshots/security_groups_creation.png`
+- `screenshots/OU_IT.png`
+- `screenshots/OU_HR.png`
+- `screenshots/OU_Support.png`
+- `screenshots/OU_Workstations.png`
 
 
 # 🖥️ How to Fix "User Doesn't Have Remote Sign-In Access" in Azure Win10Client

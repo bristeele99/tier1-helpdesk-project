@@ -36,6 +36,7 @@ HelpDesk_Lab_Azure/
 │   ├── ADDS_Installation_and_DC_Promotion.md
 │   ├── Apply_GPO.md
 │   ├── Create_User_AD.md
+|   ├── Disable_USB_Storage_AD_Users.md
 │   ├── Domain_Join_and_DNS_Config.md
 │   ├── Network_Configuration.md
 │   ├── Network_Troubleshooting.md
