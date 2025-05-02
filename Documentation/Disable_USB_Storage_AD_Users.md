@@ -71,11 +71,8 @@ Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\USBSTOR" -Name "
 
 ✅ You can run this manually or push it via GPO scripts or remote management tools.
 
----
+## 📷 Screenshot
 
-# ✅ Quick Summary
-
-- Create GPO ➔ Deny all removable storage access.
-- Apply to OUs that contain non-admin users.
-- Exclude IT/Admins if needed.
-- (Optional) Push registry changes via PowerShell for extra lockdown.
+- `screenshots/GPO_block_USB_StorageDevices.png`
+- `screenshots/GPO_block_USB_StorageDevices_Enabled.png`
+- `screenshots/link_block_GPO.png`

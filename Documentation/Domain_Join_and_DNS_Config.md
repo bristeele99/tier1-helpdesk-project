@@ -75,6 +75,6 @@ gpupdate /force
 
 Wait 5 minutes of inactivity to verify the auto-lock screen GPO takes effect
 
-## 📷 Screenshot Suggestions
+## 📷 Screenshot
 
 - `screenshots/gpo_applied_on_client.png`
