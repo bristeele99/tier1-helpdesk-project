@@ -54,7 +54,7 @@ Sometimes restarting your VM or re-connecting can help fix minor problems going 
 
 ---
 
-### 📷 Screenshot(s)
+### 📷 Screenshots
 
 - `screenshots/rdp_connect_page.png`
 - `screenshots/rdp_logged_in.png`

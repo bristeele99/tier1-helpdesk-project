@@ -27,12 +27,10 @@ User reports being unable to log into their workstation this morning.
 ---
 
 ## 📷 Screenshot(s)
-
-- `screenshots/user_account_locked.png`
 - `screenshots/ad_password_reset.png`
 
 ---
 
-## 🧠 Notes
+## 📌 Notes
 
 Consider setting up a GPO to notify users before password expiration.

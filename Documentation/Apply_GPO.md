@@ -101,7 +101,7 @@ rsop.msc
 
 ---
 
-## 📷 Screenshot(s)
+## 📷 Screenshots
 
 - `screenshots/open_gpm.png`
 - `screenshots/create_gpo_autolock.png`

@@ -95,7 +95,7 @@ This guide explains how to manually create **Organizational Units (OUs)**, **use
 
 ---
 
-## 📷 Screenshot(s)
+## 📷 Screenshots
 
 - `screenshots/ou_creation.png`
 - `screenshots/ou_structure_created.png`

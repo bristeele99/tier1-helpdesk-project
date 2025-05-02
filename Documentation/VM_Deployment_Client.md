@@ -41,6 +41,6 @@ This guide covers the deployment of a Windows 10 client virtual machine in Azure
     Password: [set during deployment]
     ```
 
-📷 Screenshot Suggestions:
+📷 Screenshots
 - `screenshots/win10_client_deployed.png`
 - `screenshots/rdp_to_client_success.png`
